@@ -20,8 +20,10 @@ const LandingPage = () => {
   //   setCount(newCount);
   // };
   return (
+    <>
+    <Navbar count={count}/>
     <div className='landing'>
-      <Navbar count={count}/>
+      
       <Content />
       {/* <ButtonGroup>
           <Button onClick={decline} icon={<MinusOutlined />} />
@@ -29,6 +31,7 @@ const LandingPage = () => {
           <Button onClick={random} icon={<QuestionOutlined />} />
       </ButtonGroup> */}
     </div>
+    </>
   )
 }
 
